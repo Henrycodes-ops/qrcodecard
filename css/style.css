@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* btn section  */
+ .first-btin{
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 6px;
+  background-color: #ff7e5f;
+  transition: all 0.2s ease;
+  font-size: 12px;
+}
+
+.first-btin:active {
+  transform: scale(0.96);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #050505;
+}
+
+.cube {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.cube div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.cube div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#151515, #00ec00);
+  transform: rotateY(calc(90deg * var(--i))) translateZ(150px); 
+  /* 300 / 2 * 150  */
+ }
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #222;
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #0f0;
+  transform: translateZ(-380px);
+  filter: blur(20px);
+  box-shadow: 0 0 120px rgba(0, 255, 0, 0.2), 
+    0 0 200px rgba(0, 255, 0, 0.4),
+    0 0 300px rgba(0, 255, 0, 0.6), 
+    0 0 400px rgba(0, 255, 0, 0.8),
+    0 0 500px rgba(0, 255, 0, 1);
+}
+
+.boxing{
+  color: #fff;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-left: 200px;
+} 
+
+
+/* circle animation */
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #151515;
+}
+
+.circle1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: none;
+  border-top: 3px solid rgb(250, 88, 88);
+  animation: ani 7ms linear infinite;
+}
+.circle2{
+  height: 230px;
+  width: 230px;
+  border-radius: 50%;
+  border: none;
+  border-top: 3px solid #f9ce24;
+  animation: ani 6ms linear infinite;
+}
+.circle3{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: none;
+  border-top: 3px solid #f9ce24;
+  animation: ani 5ms linear infinite;
+}
+
+@keyframes ani{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/* Second Circle Loader Section */
+/* section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #042104;
+  animation: animateBg 10s linear infinite;
+}
+
+@keyframes animateBg{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+section .loader{
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+section .loader span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(calc(18deg * var(--i)));
+}
+
+section .loader span::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #00ff0a;
+  box-shadow: 0 0 10px #00ff0a,
+              0 0 20px #00ff0a,
+              0 0 40px #00ff0a,
+              0 0 60px #00ff0a,
+              0 0 80px #00ff0a,
+              0 0 100px #00ff0a;
+  animation: animate 2s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+              
+
+}
+
+@keyframes animate{
+  0%{
+    transform: scale(1);
+  }
+  80%,100%{
+    transform: scale(0);
+  }
+}
+/* End of section */
+
+/* <!-- 3d cup section / */
+/* body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #607d8b;
+}
+.container{
+  position: relative;
+  top: 50px;
+}
+.cup{
+  position: relative;
+  width: 280px;
+  height: 300px;
+  background: linear-gradient(to right,#f9f9f9,#d9d9d9 );
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+}
+.top{
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to right,#f9f9f9,#d9d9d9 );
+  border-radius: 50%;
+}
+.circle{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: 50px;
+  background: linear-gradient(to left,#f9f9f9,#d9d9d9 );
+  border-radius: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.tea{
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#c57e65,#e28462);
+  border-radius: 50%;
+}
+.handle{
+  position: absolute;
+  right: -70px;
+  top: 40px;
+  width: 160px;
+  height: 180px;
+  border: 25px solid #dcdcdc;
+  border-left: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-radius: 50%;
+  transform: rotate(42deg);
+
+}
+
+.plate{
+  position: absolute;
+  bottom: -50px;
+  left: -50%;
+  transform: translate(-50%);
+  width: 500px;
+  height: 200px;
+  background: linear-gradient(to right,#f9f9f9,#e7e7e7);
+  border-radius: 50%;
+  box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
+}
+.plate::before
+{
+  content: '';
+  position: relative;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  background: linear-gradient(to left,#f9f9f9,#e7e7e7);
+
+}
+.plate::after
+{
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  background: radial-gradient(rgba(0,0,0,0.2) 25%,transparent, transparent);
+  border-radius: 50%;
+}
+
+.vapour
+{
+  position: relative;
+  display: flex;
+  z-index: 1;
+  padding: 0 20px;
+
+}
+
+.vapour span
+{
+  position: relative;
+  bottom: 50px;
+  display: block;
+  margin: 0 2px 50px;
+  min-width: 8px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  animation: animate 5s linear infinite;
+  filter: blur(8px);
+  animation-delay: calc(var(--i) * -0.5s);
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  15%
+  {
+    opacity: 1;
+  }
+  50%
+  {
+    transform: translateY(-150px) scaleX(5);
+  }
+  95%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    transform: translateY(-300px) scaleX(10);
+  }
+} */
+/* <!-- end 3d cup section / */
+
+/* Qr code section */
+/* section
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(196, 227, 247);
+  height: 100vh;
+}
+
+section div>img
+{
+  width: 250px;
+  border-radius: 7px;
+  background: none;
+} */
+
+section div
+{
+  background: #fff;
+  width: 270px;
+  padding: 10px;
+  height: fit-content;
+  border-radius: 18px;
+  box-shadow: 0 0 120px rgba(7, 135, 220, 0.2), 
+}
+
+section main
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section main>h2
+{
+  font-size: 18px;
+  font-weight: 600;
+  width: 250px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  padding: 5px;
+  color: rgb(4, 34, 65);
+  text-align: center;
+  font-family: 'montserrat', sans-serif;
+}
+
+section main>p
+{
+  width: 230px;
+  color: rgb(140, 142, 140);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding: 5px;
+  font-family: 'montserrat', sans-serif;
+  margin-bottom: 18px;
+  
+  
+}
+
+/* Qr code section */
+
+/* Yellow Blog Card */
+/* section
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gold;
+  height: 100vh;
+}
+
+section div
+{
+  background-color: #fff;
+  width: 400px;
+  padding: 18px;
+  height: fit-content;
+  border: 1px solid black;
+}
+
+section div>img
+{
+  border-radius: 7px;
+}
+
+section div>div
+{
+  background: none;
+  border: none;
+  display: flex;
+  align-items: flex-start;
+}
+
+.learning
+{
+  font-size: 14px;
+  font-weight: 700;
+  background-color: gold;
+  width: 70px;
+  padding: 4px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.published
+{
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4%;
+  width: 250px;
+}
+
+section div>h1
+{
+  margin-bottom: 4%;
+  font-weight: 700;
+  width: 250px;
+}
+
+section div>p
+{
+  width: 330px;
+  font-size: 14px;
+  font-weight: 400;
+} */
+/* Yellow Blog Card */
