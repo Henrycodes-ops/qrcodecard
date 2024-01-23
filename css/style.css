@@ -1,12 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-* {
+
+@font-face{
+  font-family: myFirstFont;
+  src: url(../fonts/Figtree-VariableFont_wght.ttf);
+}
+@font-face{
+  font-family: myFirstFontis;
+  src: url(../fonts/static/Figtree-ExtraBold.ttf);
+}
+@font-face{
+  font-family: myFirstFontare;
+  src: url(../fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+@font-face{
+  font-family: myFirstFontmay;
+  src: url(../fonts/static/Figtree-SemiBold.ttf);
+}
+* 
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* btn section  */
- .first-btin{
+ /* .first-btin{
   color: #fff;
   padding: 8px 22px;
   border-radius: 6px;
@@ -62,7 +80,7 @@ body {
   background: linear-gradient(#151515, #00ec00);
   transform: rotateY(calc(90deg * var(--i))) translateZ(150px); 
   /* 300 / 2 * 150  */
- }
+ /* }
 
 .top {
   position: absolute;
@@ -100,11 +118,11 @@ body {
   font-size: 30px;
   text-transform: uppercase;
   margin-left: 200px;
-} 
+}   */
 
 
 /* circle animation */
-body{
+/* body{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,7 +165,7 @@ body{
   100%{
     transform: rotate(360deg);
   }
-}
+} */
 
 /* Second Circle Loader Section */
 /* section{
@@ -379,7 +397,7 @@ section div>img
   background: none;
 } */
 
-section div
+/* section div
 {
   background: #fff;
   width: 270px;
@@ -423,27 +441,34 @@ section main>p
   margin-bottom: 18px;
   
   
-}
+} */
 
 /* Qr code section */
 
 /* Yellow Blog Card */
-/* section
+section
 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gold;
+  background-color: rgb(244, 208, 78);
   height: 100vh;
+  width: 100vw;
 }
 
-section div
+section .body-div
 {
   background-color: #fff;
-  width: 400px;
+  border-radius: 20px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  width: 31em;
   padding: 18px;
   height: fit-content;
-  border: 1px solid black;
+  outline: 1px;
+  box-shadow: 10px 10px rgba(0, 0, 0);
 }
 
 section div>img
@@ -457,27 +482,29 @@ section div>div
   border: none;
   display: flex;
   align-items: flex-start;
+  margin: 0;
 }
 
 .learning
 {
-  font-size: 14px;
-  font-weight: 700;
-  background-color: gold;
-  width: 70px;
-  padding: 4px;
+  font-size: 16px;
+  background-color: hsl(47, 88%, 63%);
+  width: 90px;
+  padding: 10px;
   border-radius: 5px;
   text-align: center;
   margin-top: 4%;
   margin-bottom: 4%;
+  font-family: myFirstFontis;
 }
 
 .published
 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 4%;
   width: 250px;
+  font-family: myFirstFont;
 }
 
 section div>h1
@@ -487,10 +514,38 @@ section div>h1
   width: 250px;
 }
 
-section div>p
+section div>h1>a{
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  font-family: myFirstFontis;
+
+}
+section div>h1>a:active, section div>h1>a:focus
+{
+  color: hsl(47, 88%, 63%);
+}
+
+section div>.languages
 {
   width: 330px;
-  font-size: 14px;
+  font-size: 1.3em;
   font-weight: 400;
-} */
+  line-height: 22px;
+  color: grey;
+  margin-bottom: 1.9em;
+  font-family: myFirstFont;
+}
+
+.avatar
+{
+  width: 3em;
+}
+
+.Greg
+{
+  font-family: myFirstFontis;
+  margin-top: 0.9em;
+  margin-left: 0.4em;
+}
 /* Yellow Blog Card */
