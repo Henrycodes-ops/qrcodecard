@@ -1,0 +1,101 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+@font-face
+{
+  font-family: orderHere;
+  src: url();
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  background-image: url(../img/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-color: rgb(245, 247, 255);
+}
+
+section
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first
+{
+  margin-top: 100px;
+  width: 450px;
+  background-color: #fff;
+  border-radius: 17px;
+  font-family: url();
+  box-shadow: 0 0 50% rgb(37, 68, 192);
+}
+
+.hero
+{
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+
+.order
+{
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #1f2f56;
+}
+
+.you
+{
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 400;
+  padding-left: 70px;
+  padding-right: 70px; 
+  margin-bottom: 1.0em;
+  color: hsl(224, 23%, 55%);
+}
+
+.third
+{
+  display: flex;
+}
+
+.annual
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+  margin-left: 0.9em;
+}
+
+.annual h3, .annual p
+{
+  margin-bottom: 0.5em;
+  font-size: 16px;
+}
+
+.icon
+{
+  width: 8%;
+  height: 8%;
+
+}
+
+.center
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:4em;
+  margin-right:4em;
+}

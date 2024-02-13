@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  background-image: url(../img/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-color: rgb(245, 247, 255);
+  font-family: 'montserrat', sans-serif;
+}
+
+section
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first
+{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 10px;
+  width: 450px;
+  background-color: #fff;
+  border-radius: 17px;
+  box-shadow: 0 0 50% rgb(37, 68, 192);
+
+}
+
+.hero
+{
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+
+}
+
+.order
+{
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1.4em;
+  margin-bottom: 0.6em;
+  color: #1f2f56;
+}
+
+.you
+{
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 400;
+  padding-left: 70px;
+  padding-right: 70px; 
+  margin-bottom: 1.0em;
+  color: hsl(224, 23%, 55%);
+}
+
+.third
+{
+  display: flex;
+  width: 19em;
+}
+
+.annual
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.9em;
+  margin-left: 0.9em;
+}
+
+.annual h2, .annual p
+{
+  margin-bottom: 0.5em;
+}
+
+.annual h2
+{
+  color: hsl(223, 47%, 23%);
+}
+
+.annual p
+{
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+.change
+{
+  font-size: 16px;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  margin-left: 2em;
+}
+
+.icon
+{
+  width: 25%;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.center
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:2em;
+  margin-right:2em;
+  margin-bottom: 2em;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 7px;
+  padding: 20px;
+}
+
+.last
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.proceed
+{
+  background-color: hsl(245, 75%, 52%);
+  margin: auto;
+  padding: 15px 133px;
+  border-radius: 7px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0.5px 0.5px rgba(245, 247, 255, 5px),
+  8px 8px rgba(245, 247, 255, 5px),
+  16px 16px rgba(245, 247, 255, 5px);
+  
+}
+
+.Cancel
+{
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 1.5em;
+  text-decoration: none;
+  color: hsl(228, 46%, 79%);
+  margin-bottom: 2em;
+}
