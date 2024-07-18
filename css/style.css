@@ -471,6 +471,10 @@ section .body-div
   box-shadow: 10px 10px rgba(0, 0, 0);
 }
 
+.firstImg {
+  width: 100%;
+}
+
 section div>img
 {
   border-radius: 7px;
